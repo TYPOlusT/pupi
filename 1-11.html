@@ -1,0 +1,56 @@
+<!doctype html>
+<html style="background-color: rgb(53, 53, 53); color: #ffffff;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	
+    <script>
+        
+        let discipline=[ 'Информатика', 'Основы прогромирования', 'Инжинерная графика'];
+		let lox = {
+			surname:'Карамзин',
+			name:'Виктор',
+			patronymic:'Геннадьевич',
+			ocupation:'Преподователь спец.дисциплин',
+			degree:'Высшее',
+			category:'Первая',
+			education:'Московская государственный институт электронной техники',
+			discipline,
+			none:' ',
+		};
+		let lol = 
+        `<b> ${lox.surname} ${lox.name} ${lox.patronymic} </b><br>
+			<i>Должность:</i> ${lox.ocupation}<br>
+			<i>Уровень образования:</i> ${lox.degree}<br>
+			<i>Категория:</i> ${lox.category}<br>
+			<i>Образование:</i> ${lox.education}<br>
+			<i>Дисциплина:</i><ul><li>${lox.discipline[0]}</li><br><li>${lox.discipline[1]}</li><br><li>${lox.discipline[2]}</li><br></ul>
+			<i>Примечание</i> `;
+		
+
+    </script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Характеристика</h1>
+	</header>	
+	<center>
+	<div class="content" style="background-color: rgb(189, 24, 24);  width: 400px; height: 300px; color: #bebebe; border-radius: 15px;">
+		
+		<script >
+			document.write('<b>'+lox.surname+lox.name+lox.patronymic+'</b>');
+			document.write('<i>' + 'Должность: ' + '</i>' + lox.ocupation + '<br>');
+			document.write('<i>' + 'Уровень образования: ' + '</i>' + lox.degree + '<br>');
+			document.write('<i>' + 'Категория: ' + '</i>' + lox.category + '<br>');
+			document.write('<i>' + 'Образование: ' + '</i>' + lox.education + '<br>');
+			document.write('<i>' + 'Дисциплина: ' + '</i>' + lox.discipline);
+		</script>
+		</center>
+	</div>
+	
+	
+
+</body>
+</html>

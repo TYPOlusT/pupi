@@ -1,0 +1,124 @@
+<!doctype html>
+<html style="background-color: black; color: #ffffff;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		/*let surname='Карамзин';
+		let name='Виктор';
+		let patronymic='Геннадьевич';
+		let ocupation='Преподователь спец.дисциплин';
+		let degree='Высшее';
+		let category='Первая';
+		let education='Московская государственный институт электронной техники';
+		let discipline='Информатика';
+		let note='';*/
+		/*let arr = ['Карамзин', 'Виктор', 'Геннадьевич', 'Преподователь спец.дисциплин', 'Высшее',
+		'Первая', 'Московская государственный институт электронной техники', 'Информатика'];*/
+		/*let lox = {
+			surname:'Карамзин',
+			name:'Виктор',
+			patronymic:'Геннадьевич',
+			ocupation:'Преподователь спец.дисциплин',
+			degree:'Высшее',
+			category:'Первая',
+			education:'Московская государственный институт электронной техники',
+			disciplin:'Информатика',
+			none:' ',
+		};*/ 
+
+		
+
+		/*let lol = `
+			<b> ${lox.surname} ${lox.name} ${lox.patronymic} </b><br>
+			<i>Должность:</i> ${lox.ocupation}<br>
+			<i>Уровень образования:</i> ${lox.degree}<br>
+			<i>Категория:</i> ${lox.category}<br>
+			<i>Образование:</i> ${lox.education}<br>
+			<i>Дисциплина:</i> ${lox.discipline}<br>
+		`;*/
+/*
+		let lol = `
+			<b> ${lox.surname} ${lox.name} ${lox.patronymic} </b><br>
+			<i>Должность:</i> ${lox.ocupation}<br>
+			<i>Уровень образования:</i> ${lox.degree}<br>
+			<i>Категория:</i> ${lox.category}<br>
+			<i>Образование:</i> ${lox.education}<br>
+			<i>Дисциплина:</i> ${lox.discipline}<br>
+
+		`;
+		*/
+		let discipline=[ 'Информатика', 'Основы прогромирования', 'Инжинерная графика'];
+		let lox = {
+			surname:'Карамзин',
+			name:'Виктор',
+			patronymic:'Геннадьевич',
+			ocupation:'Преподователь спец.дисциплин',
+			degree:'Высшее',
+			category:'Первая',
+			education:'Московская государственный институт электронной техники',
+			discipline,
+			none:' ',
+		};
+		let lol = `
+			<b> ${lox.surname} ${lox.name} ${lox.patronymic} </b><br>
+			<i>Должность:</i> ${lox.ocupation}<br>
+			<i>Уровень образования:</i> ${lox.degree}<br>
+			<i>Категория:</i> ${lox.category}<br>
+			<i>Образование:</i> ${lox.education}<br>
+			<i>Дисциплина:</i><ul><li>${lox.discipline[0]}</li><br><li>${lox.discipline[1]}</li><br><li>${lox.discipline[2]}</li><br></ul>
+			<i>Примечание</i> 
+		`;
+		
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Введение в JavaScript</h1>
+	</header>	
+	
+	<div class="content">
+		<!--
+		<script>
+			document.write('<b>' + surname + ' ' + name + ' ' + patronymic + '</b>' + '<br>');
+			document.write('<i>' + 'Должность: ' + '</i>' + ocupation + '<br>');
+			document.write('<i>' + 'Уровень образования: ' + '</i>' + degree + '<br>');
+			document.write('<i>' + 'Категория: ' + '</i>' + category + '<br>');
+			document.write('<i>' + 'Образование: ' + '</i>' + education + '<br>');
+			document.write('<i>' + 'Дисциплина: ' + '</i>' + discipline);
+		</script>
+		-->
+		<!--
+		<script>
+			document.write('<b>' + arr[0] + ' ' + arr[1] + ' ' + arr[2] + '</b>' + '<br>');
+			document.write('<i>' + 'Должность: ' + '</i>' + arr[3] + '<br>');
+			document.write('<i>' + 'Уровень образования: ' + '</i>' + arr[4] + '<br>');
+			document.write('<i>' + 'Категория: ' + '</i>' + arr[5] + '<br>');
+			document.write('<i>' + 'Образование: ' + '</i>' + arr[6] + '<br>');
+			document.write('<i>' + 'Дисциплина: ' + '</i>' + arr[7]);
+		</script>
+		-->
+		<!--
+		<script>
+			document.write('<b>' + lox.surname + ' ' + lox.name + ' ' + lox.patronymic + '</b>' + '<br>');
+			document.write('<i>' + 'Должность: ' + '</i>' + lox.ocupation + '<br>');
+			document.write('<i>' + 'Уровень образования: ' + '</i>' + lox.degree + '<br>');
+			document.write('<i>' + 'Категория: ' + '</i>' + lox.category + '<br>');
+			document.write('<i>' + 'Образование: ' + '</i>' + lox.education + '<br>');
+			document.write('<i>' + 'Дисциплина: ' + '</i>' + lox.discipline);
+		</script>
+		-->
+		
+		<script>
+			document.write(lol);
+		</script>
+	</div>
+	
+	<footer align = "center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+	</footer>
+
+</body>
+</html>
